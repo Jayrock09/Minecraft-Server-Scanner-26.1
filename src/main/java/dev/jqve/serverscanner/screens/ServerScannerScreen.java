@@ -176,7 +176,7 @@ public class ServerScannerScreen extends Screen {
     }
 
     private void restoreState() {
-        statusText = Text.literal("");
+        statusText = Text.literal("§eOnly scan servers/networks you own or are authorized to test.");
         this.ipTextField.setText(savedIpText.isEmpty() ? "192.168.1.1" : savedIpText);
     }
 
@@ -396,7 +396,7 @@ public class ServerScannerScreen extends Screen {
             // Re-draw the server buttons with new offset
             updateServerList();
         }
-        return super.mouseScrolled(mouseX, mouseY, amount, amount);
+        return super.mouseScrolled(mouseX, mouseY, amount);
     }
 
     @Override

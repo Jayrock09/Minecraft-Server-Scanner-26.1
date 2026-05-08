@@ -67,7 +67,7 @@ public class PortScannerScreen extends Screen {
         calculateLayoutMetrics();
         initializeTextFields();
         initializeButtons();
-        statusText = Text.literal("");
+        statusText = Text.literal("§eOnly scan servers/networks you own or are authorized to test.");
     }
 
     /**
